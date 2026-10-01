@@ -3,11 +3,13 @@
 Open items, known limitations and decisions. Add an item when a defect or doubt
 is found, before or with the fix.
 
-1. **Novelty.** Iezzi and Pauselli (2025) read in full (docs/LITERATURE.md): they
-   name label noise but handle it by drawing negatives only from low-incidence
-   provinces, which leaves within-area discrimination untested; our question
-   stands against their paper. Campedelli et al. (2024) and de Blasio et al.
-   (2022) still known from abstracts only. Status: open for those two.
+1. **Novelty.** Iezzi and Pauselli (2025) and Campedelli et al. (2024) read in
+   full (docs/LITERATURE.md). Neither evaluates with municipalities kept apart
+   between training and test; the first takes negatives only from
+   low-incidence provinces, the second splits municipality-years at random and
+   selects models on test-set recall. Within-area discrimination of *when*,
+   not *where*, is the open question. de Blasio et al. (2022) still known from
+   the abstract only. Status: open for that one.
 2. **Data access.** OpenBilanci and ISTAT verified; the rest is logged in
    docs/DATA.md. Status: open for the label sources.
 3. **abuso d'ufficio.** Excluded from the narrow label as closer to "broad"
