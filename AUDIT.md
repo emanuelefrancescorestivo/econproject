@@ -3,11 +3,11 @@
 Open items, known limitations and decisions. Add an item when a defect or doubt
 is found, before or with the fix.
 
-1. **Novelty not yet established.** The three closest Italian papers (Campedelli,
-   Daniele and Le Moglie 2024; Iezzi and Pauselli 2025; de Blasio, D'Ignazio and
-   Letta 2022) are known from abstracts only; full texts were unreachable from the
-   development container. Status: open. Read them before writing any claim of
-   contribution.
+1. **Novelty.** Iezzi and Pauselli (2025) read in full (docs/LITERATURE.md): they
+   name label noise but handle it by drawing negatives only from low-incidence
+   provinces, which leaves within-area discrimination untested; our question
+   stands against their paper. Campedelli et al. (2024) and de Blasio et al.
+   (2022) still known from abstracts only. Status: open for those two.
 2. **Data access.** OpenBilanci and ISTAT verified; the rest is logged in
    docs/DATA.md. Status: open for the label sources.
 3. **abuso d'ufficio.** Excluded from the narrow label as closer to "broad"
@@ -32,7 +32,9 @@ is found, before or with the fix.
    merger needs ISTAT's register of administrative changes. Status: open.
 10. **Amounts.** Not yet established whether OpenBilanci's harmonised figures are
     commitments or cash; compare one municipality against its published
-    *rendiconto* before modelling. Status: open.
+    *rendiconto* before modelling. Iezzi and Pauselli use commitments only, for
+    a stated reason (docs/LITERATURE.md); we follow unless there is a reason not
+    to. Status: open.
 11. **Crosswalk false matches.** A name-only match first mapped Calliano (AT),
     since renamed, onto Calliano (TN). Fixed by requiring the same region (from
     the finloc code); covered by a test. Status: fixed.

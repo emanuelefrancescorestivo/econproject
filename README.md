@@ -42,5 +42,6 @@ On Windows (PowerShell), call the venv interpreter directly:
 | `src/itcorr/policy.py` | Section IV: random, targeted and fair audits |
 | `src/itcorr/simulate.py` | synthetic panels with region-dependent detection |
 | `src/itcorr/sources/` | OpenBilanci budgets, ISTAT list and crosswalk |
+| `docs/LITERATURE.md` | reading notes on the closest Italian papers |
 | `docs/CODEBOOK.md` | how a document becomes a corruption event |
 | `AUDIT.md` | open questions, known limitations, decisions |

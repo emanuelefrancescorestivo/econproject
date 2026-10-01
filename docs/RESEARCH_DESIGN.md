@@ -28,8 +28,13 @@ Question 2 is the contribution. The existing Italian ML work predicts
 mafia-related council dismissals (Campedelli, Daniele and Le Moglie, CEPR DP19322,
 2024; Iezzi and Pauselli, UIF Quaderno 27, 2025) or corruption crimes in police
 records (de Blasio, D'Ignazio and Letta, *Technological Forecasting and Social
-Change* 184, 2022). Whether and how they treat selective labels must be checked by
-reading them in full (AUDIT item 1) before this claim is made in writing.
+Change* 184, 2022). Iezzi and Pauselli, read in full, name the problem of
+undetected positives among the negatives and answer it by taking negatives only
+from provinces with a low incidence of organised-crime-linked firms. That removes
+the negatives a model would most need to tell apart from the positives, so how
+well their 98% AUC holds *within* the affected areas is untested by design
+(docs/LITERATURE.md). The other two papers must still be read in full (AUDIT
+item 1) before the claim is made in writing.
 
 ## 2. Mapping to the paper
 
