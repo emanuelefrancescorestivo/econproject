@@ -1,0 +1,9 @@
+Codice Regione;"Codice dell'Unità territoriale sovracomunale 
+(valida a fini statistici)";Codice Provincia (Storico)(1);Progressivo del Comune (2);Codice Comune formato alfanumerico;Denominazione (Italiana e straniera);Denominazione in italiano;Denominazione altra lingua;Codice Ripartizione Geografica;Ripartizione geografica;Denominazione Regione;"Denominazione dell'Unità territoriale sovracomunale 
+(valida a fini statistici)";Tipologia di Unità territoriale sovracomunale ;Flag Comune capoluogo di provincia/città metropolitana/libero consorzio;Sigla automobilistica;Codice Comune formato numerico;Codice Comune numerico con 110 province (dal 2010 al 2016);Codice Comune numerico con 107 province (dal 2006 al 2009);Codice Comune numerico con 103 province (dal 1995 al 2005);Codice Catastale del comune;Codice NUTS1 2021;Codice NUTS2 2021 (3) ;Codice NUTS3 2021;Codice NUTS1 2024;Codice NUTS2 2024 (3) ;Codice NUTS3 2024
+03;016;016;065;016065;Castro;Castro;;1;Nord-ovest;Lombardia;Bergamo;1;0;BG;16065;16065;16065;16065;C337;ITC;ITC4;ITC46;ITC;ITC4;ITC46
+04;021;021;088;021088;Selva dei Molini/Mühlwald;Selva dei Molini;Mühlwald;2;Nord-est;Trentino-Alto Adige/Südtirol;Bolzano/Bozen;2;0;BZ;21088;21088;21088;21088;I593;ITH;ITH1;ITH10;ITH;ITH1;ITH10
+04;022;022;035;022035;Calliano;Calliano;;2;Nord-est;Trentino-Alto Adige/Südtirol;Trento;2;0;TN;22035;22035;22035;22035;B419;ITH;ITH2;ITH20;ITH;ITH2;ITH20
+07;210;010;025;010025;Genova;Genova;;1;Nord-ovest;Liguria;Genova;3;1;GE;10025;10025;10025;10025;D969;ITC;ITC3;ITC33;ITC;ITC3;ITC33
+16;075;075;096;075096;Castro;Castro;;4;Sud;Puglia;Lecce;1;0;LE;75096;75096;75096;75096;M261;ITF;ITF4;ITF45;ITF;ITF4;ITF45
+20;090;090;006;090006;Arzachena;Arzachena;;5;Isole;Sardegna;Sassari;1;0;SS;90006;104004;104004;90006;A453;ITG;ITG2;ITG2D;ITG;ITG2;ITG2D

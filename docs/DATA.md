@@ -1,9 +1,36 @@
 # Data sources
 
-Status as of the first commit: **nothing has been downloaded or inspected.** The
-development container's network policy blocked every Italian government domain
-listed below, so formats, coverage and licences are unverified. Each row becomes
-"verified" only after a file has been opened and its schema recorded here.
+A row is "verified" only after a file has been opened and its schema recorded here.
+
+## Access log (2026-10-01, from the cloud development container)
+
+| Source | Status |
+|---|---|
+| OpenBilanci (openbilanci.it) | **verified**: territory list and harmonised accounts JSON, see below |
+| ISTAT municipality list (www.istat.it) | **verified**: `itcorr.sources.istat` |
+| OpenBDAP portal (openbdap.rgs.mef.gov.it) | reachable; its data catalogue is on bdap-opendata.rgs.mef.gov.it, **blocked by the container's network policy** (domain not yet allowed) |
+| Corte dei conti (www.corteconti.it) | reachable; the judgments database is on banchedati.corteconti.it, **blocked by the network policy** |
+| SIOPE (www.siope.it) | reachable; query interface only, no bulk files found yet |
+| Ministry of the Interior: Finanza Locale, elezionistorico | **refused by the site** ("Access Denied" to cloud addresses): download from a personal computer |
+| ANAC open data (dati.anticorruzione.it) | **refused by the site's firewall** ("Request Rejected"): download from a personal computer |
+| Supreme Court archive (www.italgiure.giustizia.it) | **connection reset by the site**: download from a personal computer |
+
+## OpenBilanci, as verified
+
+- Territories: `https://openbilanci.it/search/territori?q=` returns all 8,227
+  municipalities known to the site, including abolished ones, with slug, name,
+  province and the Ministry's finloc code.
+- Accounts: `https://openbilanci.it/armonizzati/bilanci/<slug>/<entrate|spese>/dettaglio.json?year=Y&type=consuntivo`,
+  2016 to 2022. A tree of items with euros and euros per inhabitant. In a
+  random sample of 15 municipalities for 2019 (`scripts/fetch_openbilanci.py
+  --sample 15 --years 2019`), 14 had accounts, each with the same 39 revenue
+  and 367 expenditure nodes (31 and 272 leaves); one answered `null`.
+- Crosswalk to ISTAT codes (same script): 7,609 territories match on name and
+  province, 247 on a unique name within the same region, 1 on the first part
+  of a bilingual name; 370 match nothing, mostly municipalities abolished by
+  mergers (AUDIT item 9).
+- Not yet known: whether the amounts are commitments (*competenza*) or cash
+  (*cassa*) (AUDIT item 10). Licence CC BY-NC-SA 4.0; data is not committed.
 
 ## Predictors: municipal budgets (the paper's X)
 

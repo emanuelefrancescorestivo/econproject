@@ -15,8 +15,10 @@ learns about corruption, and how much about detection. See
 - Done: label construction, outer splits, the paper's nested-CV XGBoost and
   baselines, metrics, targeting and fair-targeting simulation, a synthetic
   selective-labels generator and Monte Carlo. Tested on synthetic data only.
-- Not done: any real data. Sources are listed, unverified, in
-  [docs/DATA.md](docs/DATA.md). **There are no results about Italy yet.**
+- Data: municipal budgets 2016-2022 from OpenBilanci with the ISTAT crosswalk
+  (`scripts/fetch_openbilanci.py`), verified on a sample. Labels not yet
+  collected; access status per source in [docs/DATA.md](docs/DATA.md).
+  **There are no results about Italy yet.**
 
 ## Commands
 
@@ -24,6 +26,7 @@ learns about corruption, and how much about detection. See
     pytest                                     # unit tests, synthetic data, a few seconds
     ruff check . && ruff format --check .
     python scripts/selective_labels_sim.py     # design check on SIMULATED data, ~1 min
+    python scripts/fetch_openbilanci.py --sample 20 --years 2019   # real budgets, cached in data/
 
 On Windows (PowerShell), call the venv interpreter directly:
 `.venv\Scripts\python -m pytest`.
@@ -38,5 +41,6 @@ On Windows (PowerShell), call the venv interpreter directly:
 | `src/itcorr/metrics.py` | Table 2 metrics plus precision/recall at k, average precision, calibration |
 | `src/itcorr/policy.py` | Section IV: random, targeted and fair audits |
 | `src/itcorr/simulate.py` | synthetic panels with region-dependent detection |
+| `src/itcorr/sources/` | OpenBilanci budgets, ISTAT list and crosswalk |
 | `docs/CODEBOOK.md` | how a document becomes a corruption event |
 | `AUDIT.md` | open questions, known limitations, decisions |

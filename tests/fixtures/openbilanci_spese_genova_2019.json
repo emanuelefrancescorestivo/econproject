@@ -1,0 +1,66 @@
+[
+ {
+  "slug": "ccox-quadro-4-26",
+  "label": "TOTALE GENERALE DELLE SPESE",
+  "values": [
+   {
+    "2019": {
+     "abs": 1022184417.22,
+     "pc": 1780.52991206954
+    }
+   }
+  ]
+ },
+ {
+  "slug": "ccox-quadro-4-2",
+  "label": "SERVIZI ISTITUZIONALI, GENERALI E DI GESTIONE",
+  "values": [
+   {
+    "2019": {
+     "abs": 226095113.04,
+     "pc": 393.832174467418
+    }
+   }
+  ],
+  "children": [
+   {
+    "slug": "ccox-quadro-4-2-1",
+    "label": "Organi istituzionali",
+    "values": [
+     {
+      "2019": {
+       "abs": 16834263.81,
+       "pc": 29.3233879879461
+      }
+     }
+    ],
+    "children": [
+     {
+      "slug": "ccox-quadro-4-2-1-20",
+      "label": "Titolo 1 - Spese correnti",
+      "values": [
+       {
+        "2019": {
+         "abs": 16833708.71,
+         "pc": 29.3224210663833
+        }
+       }
+      ]
+     },
+     {
+      "slug": "ccox-quadro-4-2-1-30",
+      "label": "Titolo 2 - Spese in conto capitale",
+      "values": [
+       {
+        "2019": {
+         "abs": 555.1,
+         "pc": 0.00096692156282116
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
